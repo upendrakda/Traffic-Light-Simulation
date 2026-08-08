@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Light Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Simulation canvas -->
+  <canvas id="simCanvas"></canvas>
+
+  <!-- Info panel: light / car status / countdown -->
+  <div class="hud">
+    <div class="hud-row">
+      <span class="hud-label">Light</span>
+      <span id="lightStatus" class="badge red">RED</span>
+    </div>
+    <div class="hud-divider"></div>
+    <div class="hud-row">
+      <span class="hud-label">Car</span>
+      <span id="carStatus" class="badge neutral">DRIVING</span>
+    </div>
+    <div class="hud-divider"></div>
+    <div class="hud-row">
+      <span class="hud-label">Next change</span>
+      <span id="countdown" class="badge neutral">5s</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
